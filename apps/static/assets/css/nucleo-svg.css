@@ -8,14 +8,14 @@ Icon colors
 .icon {
   display: inline-block;
   /* icon primary color */
-  color: #111111;
+  color: #384d78;
   height: 1em;
   width: 1em;
 }
 
 .icon use {
   /* icon secondary color - fill */
-  fill: #7ea6f6;
+  fill: #4d6ba7;
 }
 
 .icon.icon-outline use {
