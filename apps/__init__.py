@@ -38,6 +38,9 @@ def configure_database(app):
 def create_app(config):
     app = Flask(__name__)
     app.config.from_object(config)
+    app.secret_key = "secret key"
+    app.config['UPLOAD_FOLDER'] = 'static/uploads/'
+    app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
     register_extensions(app)
     register_blueprints(app)
     configure_database(app)
