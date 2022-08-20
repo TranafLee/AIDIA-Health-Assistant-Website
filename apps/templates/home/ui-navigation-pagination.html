@@ -47,31 +47,19 @@
         <div class="mb-4 w-100 w-md-50 w-lg-25">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="https://demos.creative-tim.com/material-kit-pro/index">Navigation</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Pagination</li>
             </ol>
           </nav>
-          <h3>Pagination</h3>
+          <h3>Schedule</h3>
         </div>
         <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
           <div class="container border-bottom">
             <div class="row justify-space-between py-2">
               <div class="col-lg-3 me-auto">
-                <p class="lead text-dark pt-1 mb-0">Pagination Simple</p>
+                <p class="lead text-dark pt-1 mb-0">Doctor Schedule</p>
               </div>
               <div class="col-lg-3">
                 <div class="nav-wrapper position-relative end-0">
                   <ul class="nav nav-pills nav-fill flex-row p-1" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link mb-0 px-0 py-1 active" data-bs-toggle="tab" href="#preview-pagination-simple" role="tab" aria-selected="true">
-                        <i class="fas fa-desktop text-sm me-2"></i> Preview
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mb-0 px-0 py-1" data-bs-toggle="tab" href="#code-pagination-simple" role="tab" aria-selected="false">
-                        <i class="fas fa-code text-sm me-2"></i> Code
-                      </a>
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -79,51 +67,72 @@
           </div>
           <div class="tab-content tab-space">
             <div class="tab-pane active" id="preview-pagination-simple">
-              <iframe width="100%" height="300px" srcdoc='<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
-        <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-        <!-- Material Icons -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.0" rel="stylesheet" />
-        <section class="py-7">
-  <div class="container">
-    <div class="row justify-space-between py-2">
-      <div class="col-lg-4 mx-auto">
-        <ul class="pagination pagination-primary m-4">
-          <li class="page-item">
-            <a class="page-link" href="javascript:;" aria-label="Previous">
-              <span aria-hidden="true"><i class="material-icons" aria-hidden="true">chevron_left</i></span>
-            </a>
-          </li>
-          <li class="page-item active">
-            <a class="page-link" href="javascript:;">1</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="javascript:;">2</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="javascript:;">3</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="javascript:;">4</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="javascript:;">5</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="javascript:;" aria-label="Next">
-              <span aria-hidden="true"><i class="material-icons" aria-hidden="true">chevron_right</i></span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+              <table>
+                <tr>
+                  <th>Doctor</th>
+                  <th>Slot 1</th>
+                  <th>Slot 2</th>
+                  <th>Slot 3</th>
+                  <th>Slot 4</th>
+                  <th>Slot 5</th>
+                  <th>Slot 6</th>
+                </tr>
+                <tr>
+                  <td>Alfreds Futterkiste</td>
+                  <td>x</td>
+                  <td>o</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>o</td>
+                  <td>x</td>
+                </tr>
+                <tr>
+                  <td>Centro comercial Moctezuma</td>
+                  <td>o</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>o</td>
+                  <td>x</td>
 
-        <script src="/static/assets/js/core/popper.min.js" type="text/javascript"></script>
-        <script src="/static/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-        '></iframe>
+                </tr>
+                <tr>
+                  <td>Ernst Handel</td>
+                  <td>o</td>
+                  <td>o</td>
+                  <td>x</td>
+                  <td>o</td>
+                  <td>x</td>
+                  <td>x</td>
+                </tr>
+                <tr>
+                  <td>Island Trading</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>o</td>
+                  <td>x</td>
+                  <td>o</td>
+                  <td>o</td>
+                </tr>
+                <tr>
+                  <td>Laughing Bacchus Winecellars</td>
+                  <td>x</td>
+                  <td>o</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>o</td>
+                  <td>o</td>
+                </tr>
+                <tr>
+                  <td>Magazzini Alimentari Riuniti</td>
+                  <td>o</td>
+                  <td>o</td>
+                  <td>o</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>x</td>
+                </tr>
+              </table>
             </div>
             <div class="tab-pane" id="code-pagination-simple">
               <div class="position-relative p-4 pb-2">
@@ -171,41 +180,12 @@
         <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
           <div class="container border-bottom">
             <div class="row py-3">
-              <div class="col-lg-4 text-start">
-                <p class="lead text-dark pt-1 mb-0">Pagination Sizing</p>
-              </div>
-              <div class="col-lg-4 mt-1 text-center">
-                <span class="badge bg-light text-dark"><i class="fas fa-lock me-1" aria-hidden="true"></i> Screenshot</span>
-              </div>
               <div class="col-lg-4 text-end my-auto">
-                <a href="https://appseed.us/product/flask-material-kit2-pro" target="_blank" class="text-primary icon-move-right">PRO Component
+                <a href="http://127.0.0.1:5000/contact-us.html" target="_blank" class="text-primary icon-move-right">Booking
                   <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
-          </div>
-          <div>
-            <img class="w-100" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/assets/img/sections/pagination/pagination-sizing.jpg" alt="pagination-2">
-          </div>
-        </div>
-        <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
-          <div class="container border-bottom">
-            <div class="row py-3">
-              <div class="col-lg-4 text-start">
-                <p class="lead text-dark pt-1 mb-0">Pagination Variants</p>
-              </div>
-              <div class="col-lg-4 mt-1 text-center">
-                <span class="badge bg-light text-dark"><i class="fas fa-lock me-1" aria-hidden="true"></i> Screenshot</span>
-              </div>
-              <div class="col-lg-4 text-end my-auto">
-                <a href="https://appseed.us/product/flask-material-kit2-pro" target="_blank" class="text-primary icon-move-right">PRO Component
-                  <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div>
-            <img class="w-100" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/assets/img/sections/pagination/pagination-variants.jpg" alt="pagination-3">
           </div>
         </div>
       </div>

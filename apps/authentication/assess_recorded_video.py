@@ -1,14 +1,14 @@
 import os
-import apps
+from run import app
 import urllib.request
 from flask import Flask, flash, request, redirect, url_for, render_template
 from werkzeug.utils import secure_filename
 	
-# @app.route('/')
+@app.route('/')
 def upload_form():
 	return render_template('upload.html')
 
-# @app.route('/', methods=['POST'])
+@app.route('/', methods=['POST'])
 def upload_video():
 	if 'file' not in request.files:
 		flash('No file part')
@@ -19,15 +19,21 @@ def upload_video():
 		return redirect(request.url)
 	else:
 		filename = secure_filename(file.filename)
-		file.save(os.path.join(apps.config['UPLOAD_FOLDER'], filename))
+		file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
 		#print('upload_video filename: ' + filename)
 		flash('Video successfully uploaded and displayed below')
 		return render_template('upload.html', filename=filename)
 
-# @app.route('/display/<filename>')
+@app.route('/display/<filename>')
 def display_video(filename):
 	#print('display_video filename: ' + filename)
-	return redirect(url_for('static', filename='uploads/' + filename), code=301)
+	return redirect(url_for('static', filename='uploads/' + filename), code=302)
 
-# if __name__ == "__main__":
-#     app.run()
+
+@app.errorhandler(413)
+def largefile_error(filename):
+ return redirect(url_for('static', filename='uploads/' + filename)), 413
+
+
+if __name__ == "__main__":
+    app.run()
